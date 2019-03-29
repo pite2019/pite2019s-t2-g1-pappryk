@@ -1,7 +1,7 @@
 # Class diary
 #
 # Create program for handling lesson scores.
-# Use python to handle student (highscool) class scores, and attendance.
+# Use python to handle student (highschool) class scores, and attendance.
 # Make it possible to:
 # - Get students total average score (average across classes)
 # - get students average score in class
@@ -28,3 +28,19 @@
 #
 #Delete these comments before commit!
 #Good luck.
+from Diary import Diary
+
+
+
+def main():
+    diary = Diary()
+    diary.add_lab_class("PITE")
+    diary.lab_classes[0].add_student("Patryk", "Nguyen")
+    diary.lab_classes[0].get_students()
+
+
+
+
+if __name__ == "__main__":
+    main()
+
