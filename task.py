@@ -34,10 +34,11 @@ from Diary import Diary
 
 def main():
     diary = Diary()
+    
     diary.add_lab_class("PITE")
-    diary.lab_classes[0].add_student("Patryk", "Nguyen")
-    diary.lab_classes[0].get_students()
-
+    pite = diary.lab_classes[0]
+    pite.add_student("Patryk", "Nguyen")
+    pite.print_students()
 
 
 

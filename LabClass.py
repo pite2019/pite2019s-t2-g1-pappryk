@@ -8,7 +8,10 @@ class LabClass:
         student = Student(first_name, last_name)
         self.students.append(student)
     
-    def get_students(self):
+    def print_students(self):
         print(self.name + " :")
         for s in self.students:
             print("  " + s.first_name + " " + s.last_name)
+
+    def add_grade(self, student_index, grade):
+        self.students.add_grade(student_index, grade)
